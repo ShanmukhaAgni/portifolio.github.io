@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title> personal portifolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/08b355f8c8.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="header">
+    <div class="container">
+      <nav>
+        <a href="file:///C:/Users/nikso/Html%20-%20personal%20site/index2.html" target="_blank"><img src="logo.png" alt="logo"></a>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">contact</a></li>
+          <i class="fa-solid fa-xmark"></i </ul>
+          <i class="fa-solid fa-bars"></i>
+      </nav>
+      <div class="profile">
+
+
+
+        <div class="header-text">
+          <p>web developer</p>
+          <h1>Hi,I'm <span>shanmukha</span><br> from india</h1>
+        </div>
+        <div class="my-pic">
+          <img src="profile.png" alt="">
+        </div>
+      </div>
+
+
+
+    </div>
+  </div>
+  <div class="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <a href="https://rvrjcce.ac.in/" target="_blank" rel="noopener noreferrer"><img src="rvrjc.jpg"></a>
+        </div>
+        <div class="about-col-2">
+          <h1>About me</h1>
+          <p class="about-me"> Hi Everyone i'm shanmukha sai ram Studying <span> R.V.R & J.C COLLEGE OF ENGINEERING</span>,I was well know with languages like c,c++,java & kotlin.I also have decent amount of knowledge in Android development and web
+            development.</p>
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">skills</p>
+            <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('Education')">Education</p>
+          </div>
+          <div class="tab-contents" active-tab id="skills">
+            <ul>
+              <li><span>web developent</span><br>creating websites</li>
+              <li><span>App Development</span><br>Made 2 apps</li>
+            </ul>
+
+          </div>
+          <div class="tab-contents" id="Experience">
+            <ul>
+              <li><span>web developent</span><br>creating websites</li>
+              <li><span>App Development</span><br>Making apps</li>
+            </ul>
+
+          </div>
+          <div class="tab-contents" id="Education">
+            <ul>
+              <li><span>web developent</span><br>creating websites</li>
+              <li><span>App Development</span><br>Made 2 apps</li>
+            </ul>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="services">
+    <div class="container">
+      <h1 class="sub-title"> My Services</h1>
+      <div class="services-list">
+        <div>
+          <i class="fa-solid fa-code"></i>
+          <h2>Web Design</h2>
+          <p>think ...about what you do.Dont think about the others</p>
+          <a href="#">learn more</a>
+        </div>
+        <div>
+          <i class="fa-solid fa-gamepad"></i>
+          <h2>Game development </h2>
+
+          <p>think.... about what you do.Dont think about the others</p>
+          <a href="#">learn more</a>
+        </div>
+        <div>
+          <i class="fa-brands fa-android"></i>
+          <h2>App Design</h2>
+
+          <p>think ....about what you do.Dont think about the others</p>
+          <a href="#">learn more</a>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+  <!--------------portifolio---------------->
+  <div class="portifolio">
+    <div class="container">
+      <h1 class="sub-title">My Work</h1>
+      <div class="work-list">
+        <div class="images">
+          <div class="work">
+            <img src="leetcode.png" alt="leetcode">
+          </div>
+          <div class="work">
+            <img src="codechef.jpg" alt="codechef">
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn">see more</a>
+    </div>
+  </div>
+  <!------------------------contact---------------------->
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <p><i class="fa-solid fa-envelope"></i>contact@example.com</p>
+          <p><i class="fa-solid fa-phone"></i>0123456789</p>
+          <div class="social-icons">
+            <a href="https://fontawesome.com/icons/envelope?f=classic&s=solid" target="_blank"></a><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"></a><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"></a><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"></a><i class="fa-brands fa-instagram"></i></a>
+          </div>
+          <a href="Shanmukha_Resume.pdf" download class="btn btn2">Download Resume</a>
+        </div>
+        <div class="contact-right">
+          <form>
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="Message" rows="8" placeholder="Your Message"></textarea>
+            <button type="button" class="btn btn2">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="copy-right">
+    <p>Copyright shanmukha. Made with <i class="fa-sharp fa-solid fa-brain"></i> by Brain Tech</p>
+  </div>
+  </div>
+  <script>
+    var tablinks = document.getElementsByClassName("tab-links")
+    var tabcontents = document.getElementsByClassName("tab-contents")
+
+    function opentab(tabname) {
+      for (tablink of tablinks) {
+        tablink.classList.remove("active-link");
+      }
+      for (tabcontent of tabcontents {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link"); docment.getElementById(tabname).classList.add("active-tab");
+      }
+  </script>
+</body>
+
+</html>
